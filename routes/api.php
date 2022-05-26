@@ -56,6 +56,16 @@ Route::middleware('useracc')->group(function (){
 
 });
 
-Route::post('products/create', 'API\ProductController@create');
 
-Route::get('products/index', 'API\ProductController@index');
+Route::prefix('products')->group(function (){
+
+    Route::post('create', 'API\ProductController@create');
+
+    Route::get('index', 'API\ProductController@index');
+
+    Route::put('update/{id}', 'API\ProductController@update');
+
+    Route::delete('delete/{id}', 'API\ProductController@delete');
+});
+
+Route::apiResource('categories', 'API\CategoryController');

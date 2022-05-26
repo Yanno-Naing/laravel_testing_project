@@ -1,0 +1,21 @@
+Routing
+API Routing - api.php
+RouteServiceProvider
+
+Middleware and Routing
+Kernel.php
+
+Database Migration
+Seeding
+
+Models
+- Category
+- Product
+
+Controllers API 
+CRUD operations
+
+PostMan
+
+
+
