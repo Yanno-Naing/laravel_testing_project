@@ -18,4 +18,12 @@ CRUD operations
 PostMan
 
 
+----(to rewatch)----
+Controller 
+
+Request, Response
+Storage 
+File upload
+
+Intervention Image Package to manipulate image
 

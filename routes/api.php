@@ -69,3 +69,12 @@ Route::prefix('products')->group(function (){
 });
 
 Route::apiResource('categories', 'API\CategoryController');
+
+
+#Request & Response
+
+Route::any('/test-request/{name}','TestRequestController@apiRequest');
+
+Route::any('/test-response','TestRequestController@apiResponse');
+
+Route::post('/file-upload','TestRequestController@fileUpload');

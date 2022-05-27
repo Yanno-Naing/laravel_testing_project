@@ -109,3 +109,16 @@ Route::prefix('admin')->group(function(){
 
 Route::resource('photos', PhotoController::class);
 
+
+
+#Request and Response
+
+Route::any('/test-request/{name}','TestRequestController@index');
+
+Route::get('/test-view', 'TestRequestController@redirect');
+
+Route::get('/file-download', 'TestRequestController@fileDownload')->name('filedownload');
+
+Route::get('/file-downdelete', function(){
+    return redirect()->route('filedownload');
+});
