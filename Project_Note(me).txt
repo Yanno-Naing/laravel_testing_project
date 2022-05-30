@@ -17,13 +17,17 @@ CRUD operations
 
 PostMan
 
+Validation, Request Class
+View blade page
+request, response funcs, and passing objects.
+
 
 ----(to rewatch)----
 Controller 
 
 Request, Response
 Storage 
-File upload
+File upload and download
 
 Intervention Image Package to manipulate image
 

@@ -122,3 +122,12 @@ Route::get('/file-download', 'TestRequestController@fileDownload')->name('filedo
 Route::get('/file-downdelete', function(){
     return redirect()->route('filedownload');
 });
+
+
+# Validation - Registration Form Routes
+
+Route::get('/users/register', 'ValidationController@userRegister');
+Route::post('/user-custom-register', 'ValidationController@customRequest')->name('register-data');
+Route::get('/success', function(){
+    return view('registration_form.success');
+});

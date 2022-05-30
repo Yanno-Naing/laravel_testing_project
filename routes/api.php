@@ -78,3 +78,10 @@ Route::any('/test-request/{name}','TestRequestController@apiRequest');
 Route::any('/test-response','TestRequestController@apiResponse');
 
 Route::post('/file-upload','TestRequestController@fileUpload');
+
+
+# Validation
+
+Route::post('/user-register', 'ValidationController@register');
+
+Route::post('/user-custom-register', 'ValidationController@customRequest');
