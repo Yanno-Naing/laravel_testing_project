@@ -70,7 +70,7 @@ class TestRequestController extends Controller
         //return $request->file;
         //$path = $request->file('file')->store('avatars');
 
-        $fileName = $request->file('file')->getClientOriginalName();  
+        $fileName = $request->file->getClientOriginalName();  
         $contents = file_get_contents($request->file);
         //return $contents;
 

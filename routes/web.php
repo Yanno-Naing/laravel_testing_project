@@ -13,9 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
 // Route::get('/user', function () {
 //     return view('profile');
@@ -131,3 +131,13 @@ Route::post('/user-custom-register', 'ValidationController@customRequest')->name
 Route::get('/success', function(){
     return view('registration_form.success');
 });
+
+
+# Assignment - Tour Booking Form Pages
+Route::get('/', 'TourBooking\TourBookingController@index');
+
+Route::get('/tour-index', 'TourBooking\TourBookingController@index');
+
+Route::post('/tour-save', 'TourBooking\TourBookingController@save');
+
+Route::get('/tour-show', 'TourBooking\TourBookingController@show');
